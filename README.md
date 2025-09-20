@@ -3,6 +3,13 @@
 O **ecoMAR** é um site educativo e interativo sobre o **ODS 14 - Vida na Água**, que busca conscientizar sobre a importância da preservação dos oceanos, mares e rios.  
 O projeto traz informações, dados relevantes e recursos visuais para destacar os impactos da poluição marinha e incentivar práticas sustentáveis.
 
+foi desenvolvido como parte do **Projeto Integrador do Senac**, unindo conhecimentos de **HTML, CSS e JavaScript** para criar uma aplicação informativa e responsiva.
+
+## 🌐 Deploy Online
+
+O site está disponível online neste link:  
+[💻 Acessar ecoMAR](https://lovely-jalebi-18b9e3.netlify.app/)
+
 ---
 
 ## 📌 Funcionalidades
