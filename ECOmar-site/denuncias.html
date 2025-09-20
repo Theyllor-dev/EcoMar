@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #1f4662;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #90bb72;
+  color: #002b59;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #10284a;
+}
+
+#btn-voltar {
+  width: auto;
+  padding: 10px 20px;
+  position: relative;
+  top: 14px;
+}
+#btn-limpar{
+  width: 10%;
+  position: relative;
+  left: 1200px;
+  top: 10px;
+}
+@media screen and (max-width: 500px){
+  table {
+    margin-top: 10%;
+
+  }
+  #btn-limpar{
+    width: 31%;
+    top: 43px;
+    left: 255px;
+    background-color: #18427c;
+    color: #90bb72;
+}
+  
+#btn-voltar{
+  right: -10px;
+}
+
+}
+</style>
+<body>
+  <button class="btn-denuncia" id="btn-limpar" style="background-color: #18427c; color: #90bb72;" onclick="limparTabela()">limpar a tabela > </button>
+  <a href="index.html"><button class="btn-denuncia" id="btn-voltar">voltar > </button></a>
+    <table>
+   
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Local</th>
+          <th>Denúncia</th>
+        </tr>
+      
+      <tbody id="tabelaDenuncias">
+     
+      </tbody>
+  </table>
+
+<script>
+  let denuncias = JSON.parse(localStorage.getItem('itens')) || [];
+        let tabela = document.getElementById('tabelaDenuncias');
+
+        denuncias.forEach(item => {
+            let novaLinha = tabela.insertRow();
+
+            novaLinha.insertCell(0).innerText = item.nome;
+            novaLinha.insertCell(1).innerText = item.email;
+            novaLinha.insertCell(2).innerText = item.local;
+            novaLinha.insertCell(3).innerText = item.denuncia;
+        });
+        function limparTabela(){
+    localStorage.removeItem('itens');
+    denuncias = [];
+    tabela.innerText = "";
+    alert('tela limpa com sucesso!!')
+
+}
+</script>
+
+  <script src="server.js"></script>
+  
+</body>
+</html>

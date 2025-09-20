@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+}
+html, body {
+  
+  overflow-x: hidden;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+body {
+  background-color: #002b59;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 26px 28px;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.mobile-nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #0000005c;
+  backdrop-filter: blur(7px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: none;
+}
+.fa-chevron-up{
+  color: white;
+  font-size: 1.5rem;
+  margin: 16px 0 0 8px;
+  cursor: pointer;
+}
+.mobile-nav li {
+  
+  margin: 16px 26px 7px 8px;
+ width: 100%;
+ list-style: none;
+ 
+}
+.mobile-nav a{
+  color: #94c8ff;
+  width: 100%;
+}
+
+#menu{
+  display: none;
+}
+#search-m{
+  display: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 1.1rem;
+  
+}
+a:hover {
+  color: #80e239;
+  transition: 1s;
+}
+.video-background{
+  z-index: -11;
+  position: relative;
+  margin-top: -45%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+ 
+}
+#video-principal{
+  display: block;
+  width: 100%;
+  height: 208vh;
+  position: absolute;
+  top: -435px;
+  left: 0;
+  z-index: -17;
+  transform: rotate(90deg);
+   
+}
+#titulo-main {
+    font-size: 100px;
+    margin-top: 120px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 10px;
+
+  }
+  .subtitulo-main{
+        
+    position: relative; 
+    text-align: center;
+    top: -30px;
+  }
+
+  .subtitulo-main h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    
+  }
+  .subtitulo-main p {
+    font-weight: 400;
+    width: 45%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+#ods14-img {
+    position: relative;
+    top: 36px;
+    left: 12px;
+    right: auto;
+    width: 68px;
+  }
+  #logo-main {
+      position: absolute;
+    top: 543px;
+    left: 88%;
+    width: 120px;
+  }
+  
+.dados {
+       height: 40vh;
+    top: px;
+    position: relative;
+    width: 100%;
+    background-color: #10284a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 37px;
+    gap: 1px;
+}
+
+.dado {
+  text-align: center;
+  flex: 1;
+}
+
+.dado span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #04274a;
+}
+
+.dado p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+  .cards{
+  display: flex;
+  gap: 155px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0px 16px;
+  flex-wrap: wrap;
+  }
+   .card{ 
+    position: relative;
+    top: 130px;
+    width: 43%;
+    height: 68vh;
+    background-color: #1f4662;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+
+  }
+  .card h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #90bb72;
+  }
+  .card p{
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+  }
+  .paragrafo-p{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  #img-arvore{
+    position: relative;
+    top: 70px;
+    width: 612px;
+    z-index: 111;
+    left: 29%;
+  }
+#svg-wave{
+  z-index: 11;
+  position: relative;
+}
+.img-reciclavel{
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(0, 0, 0);
+    margin-top: -6px;
+     overflow: hidden;  
+  position: relative;  
+}
+#img-recicle{
+ position: absolute;   
+  top: -40px;           
+  left: 0;             
+  width: 100%;
+  
+}
+.poluição{
+  text-align: center;
+  position: relative;
+}
+.poluição h3{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 45%;
+}
+.poluição p{
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 55%;
+}
+.denuncia h2{
+  text-align: center;
+}
+.denuncia p{
+  text-align: center;
+  margin: 0 auto;
+  width: 55%;
+  font-weight: 300;
+  font-size: 18px;
+}
+  .carrosel {
+  display: flex;
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.carrosel img {
+  width: 100%;
+  height: 40%;
+  flex-shrink: 0; 
+  border-radius: 12px;
+}
+.btn-seta {
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 46px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+
+input{
+  border: solid 2px #1f4662;
+  background-color: #00000039;
+  color: #ffffff;
+  width: 36%;
+  height: 51px;
+  border-radius: 20px;
+  padding: 5px 26px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.518);
+}
+form{
+        margin-top: 2px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+.btn-denuncia{
+  margin-top: -24px;
+  width: 30%;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  background-color: #90bb72;
+  color: #002b59;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow:  0 2px 4px rgba(0, 0, 0, 0.518);
+}
+.btn-denuncia:hover{
+  background-color: #4ca6da;
+  color: white;
+  transition: 1s;
+}
+#btn-Verdenuncias{
+  position: relative;
+  left: 0px;
+  top: 25px;
+  background-color: #0f3f74;
+  color: white;
+  border: solid 1px  #678353;
+  font-size: 12px;
+}
+#btn-Verdenuncias :hover{
+  background-color: #678353;
+  color: white;
+  transition: 1s;
+}
+ footer{
+      height: 49vh;
+      background-color: #04234f;
+      margin-top: 50px;
+     
+    }
+    footer,h2{
+      text-align: center;
+      position: relative;
+      top: -2px;
+    }
+    footer-content{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      font-size: 14px;
+      color: whitesmoke;
+      font-weight: 300;
+
+    }
+    .socials {
+    display: flex;
+    gap: 39px;
+    list-style: none;
+    padding: 29px 643px;
+    margin: 0;
+    }
+hr{
+  border: none;
+  height: 2px;
+  margin:  auto 0;
+ 
+  background-color: #ffffff;
+ 
+}
+
+#menu-icon{
+  display: none;
+}
+  
+
+
+
+
+#video-mobile {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 890px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-links {
+    display: none;
+  }
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 28px;
+    gap: 20px;
+  }
+   #search-m {
+    margin-left: auto;
+  }
+  #titulo-main {
+    font-size: 80px;
+    margin-top: 120px;
+    font-weight: 400;
+    text-align: center;
+  }
+  #logo-main {
+    position: relative;
+    left: 44%;
+    top: 1px;  
+  }
+  .subtitulo-main {
+   position: relative;
+        left: -254px;
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: -webkit-center;
+        margin-top: 3px;
+        gap: 8px;
+    }
+  }
+  
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 28px;
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #search-m {
+    margin-left: auto;
+  }
+  #menu-icon{
+    display: block;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  video {
+    position: absolute;
+    width: 110%;
+    height: 192vh;
+    top: -367px;
+    left: -16px;
+    z-index: -1;
+    display: block;
+  }
+
+  #titulo-main {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 120px;
+    font-weight: 200;
+    letter-spacing: 3px;
+  }
+
+  .subtitulo-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 11px;
+    gap: 6px;
+  }
+
+  .subtitulo-main h3 {
+        position: relative;
+        left: 267px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #a2dba6;
+  }
+
+  .subtitulo-main p {
+        position: relative;
+        left: 259px;
+        font-size: 13px;
+        width: 79%;
+  }
+
+  #ods14-img {
+    position: absolute;
+    top: 74%;
+    left: 18px;
+    width: 68px;
+  }
+
+  #logo-main {
+    position: absolute;
+    top: 72%;
+    left: 70%;
+  }
+  hr{
+    border: none;
+    height: 1px;
+    position: relative;
+    top: -10px;
+    background-color: #ffffff;
+    z-index: -1;
+  }
+
+  .dados {
+    background-color: #2177a9;
+    height: 57vh;
+    position: absolute;
+    top: 655px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dado span {
+    font-size: 2rem;
+  }
+
+  .dado p {
+    font-size: 0.8rem;
+  }
+  .card{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 90%;
+    height: 55vh;
+    background-color: #1f4662;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    top: 170px;
+    margin-bottom: 20px;
+    
+  }
+  .cards{
+    gap: 61px;
+  }
+  #card-ods{
+        z-index: -1;
+        top: 223px;
+        height: 50%;
+  }
+    .card h3{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #90bb72;
+  }
+  .card p{
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+  }
+  #card-ods h3{
+    z-index: 10;
+  }
+  #svg-wave{
+   margin-top: 50%;
+  }
+  
+  h2{
+    font-size: 30px;
+     text-align: center;
+     font-weight: 400;
+    color: #90bb72;
+    position: relative;
+    top: 36px;
+  }
+
+  .ods-arvore, img{
+         width: 250px;
+  }
+  #img-arvore {
+    position: relative;
+    top: -239px;
+    width: 612px;
+    z-index: 111;
+    left: 34%;
+}
+  .ods-arvore{
+    position: relative;
+    top: 426px;
+    left: -130px;
+    width: 393px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .paragrafo-p{
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .img-reciclavel{
+    width: 100%;
+    height: 20vh;
+    background-color: whitesmoke;
+    margin-top: -6px;
+}
+.img-reciclavel{
+ background-size: cover;
+  background-color: rgb(255, 255, 255);
+  margin-top: -6px;
+  overflow: hidden;     
+  position: relative;   
+}
+#img-recicle  {
+  position: absolute;   
+  top: -1px;          
+  left: 0;            
+  width: 100%;
+
+}
+.poluição h3{
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 80%;
+}
+  .poluição p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    
+    font-weight: 300;
+    margin: 0 auto;
+    width: 97%;
+  }
+.carrosel img{
+ width: 100%;
+    height: 37vh;
+    flex-shrink: 0;
+}
+.denuncia p{
+  width: 83%;
+}
+form{
+        margin-top: -23px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+    input {
+      border: solid 2px #1f4662;
+      background-color: #00000039;
+      color: #ffffff;
+      width: 82%;
+      height: 43px;
+      border-radius: 18px;
+      padding: 5px 26px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.518);
+  }
+        footer{
+      height: 49vh;
+      background-color: #04234f;
+     
+    }
+    footer,h2{
+      position: relative;
+      top: -2px;
+    }
+    footer-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      font-size: 14px;
+      color: whitesmoke;
+      font-weight: 300;
+
+    }
+    .socials {
+       display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 11px 92px;
+        margin: 0;
+}
+hr{
+  z-index: -1;
+}
+
+.socials li a {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.socials li a:hover {
+  color: #00bfff;       
+}
+}
+
+
+@media screen and (max-width: 500px) {
+  #video-mobile {
+    display: block;
+  }
+  #video-principal {
+    display: none;
+  }
+  #menu{
+  display: block;
+}
+#search-m{
+  display: block;
+}
+}
+
+
